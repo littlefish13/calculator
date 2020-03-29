@@ -1,0 +1,87 @@
+/* pages/cal/cal.wxss */
+.container{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+.screen{
+  background-color: black;
+  height: 350rpx;
+  width: 100vw;
+  color: white;
+  text-align: right;
+  position: relative;
+  font-size: 130rpx;
+  line-height: 450rpx;
+}
+.screen_text{
+  margin: 30rpx auto;
+  width: 90%;
+  overflow: hidden;
+  word-break:break-all;
+}
+
+.orange{
+  background-color: orange;
+}
+.gray{
+  background-color:rgb(231, 231, 231);
+}
+.white {
+  background: rgb(97, 97, 97);
+  color: white;
+}
+
+
+shadow::after {
+  border-radius: 0;
+  transform: scale(1);
+  /* transition: all 0s ease-in-out; */
+}
+
+
+.shadow {
+  background: rgb(243, 243, 244);
+}
+
+.main{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  width: 100%;
+  justify-content: space-around;
+}
+.btnGroup{
+  width: 100%;
+  display: flex;
+  height:20%;
+  justify-content: space-around;
+}
+.btnGroup button{
+display: inline-block;
+font-size: 60rpx; 
+line-height: 140rpx;
+height: 100%;
+border-radius: 0rpx;
+}
+#time{
+  line-height: 160rpx;
+}
+#time image{
+  width: 60%;
+  height: 40%;
+  
+}
+.zero{
+  flex:1;
+}
+#spot,#equals{
+width:25%;
+}
+
+.active{
+  background-color: white;
+  color: orange;
+}

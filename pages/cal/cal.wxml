@@ -1,0 +1,90 @@
+<!--pages/cal/cal.wxml-->
+<view class="container">
+<view class="screen">
+<view class="screen_text">
+{{screen}}
+</view>
+</view>
+
+
+<view class="main">
+
+<!-- 清除、回退、时间,/ -->
+<view class="btnGroup">
+<button id='clear' bindtap="clear" hover-class='shadow' class="btn-item gray"><view>{{clear}}</view></button>
+<button id='back' bindtap="goBack" hover-class='shadow' class="btn-item gray">←</button>
+<button hover-class='shadow' class="btn-item gray" hover-class='shadow' id='time'
+bindtap="getDate"  >
+<image src="img/time.png"
+
+></image>
+</button>
+<button id='divide' bindtap="getOperation" mark:opera='/' hover-class="shadow" class="btn-item orange {{name=='divide'?'active':''}}">/</button>
+
+</view>
+
+
+
+<!-- 7,8,9,* -->
+<view class="btnGroup">
+<button id='num7' bindtap="setNumber" hover-class='shadow' class="btn-item white"
+data-num="7"
+>7</button>
+<button id='num8' bindtap="setNumber" hover-class='shadow' class="btn-item white"
+data-num="8"
+>8</button>
+<button id='num9' bindtap="setNumber" hover-class='shadow' class="btn-item white"
+data-num="9"
+>9</button>
+<button id='multiply' bindtap="getOperation" mark:opera='*' hover-class="shadow" class="btn-item orange {{name=='multiply'?'active':''}}">*</button>
+
+</view>
+
+<!-- 4,5,6,- -->
+<view class="btnGroup">
+<button id='num4' bindtap="setNumber" hover-class='shadow' class="btn-item white"
+data-num="4"
+>4</button>
+<button id='num5' bindtap="setNumber" hover-class='shadow' class="btn-item white"
+data-num="5"
+>5</button>
+<button id='num6' bindtap="setNumber" hover-class='shadow' class="btn-item white"
+data-num="6"
+>6</button>
+<button id='minus' bindtap="getOperation" mark:opera='-' hover-class="shadow" class="btn-item orange {{name=='minus'?'active':''}}">-</button>
+</view>
+
+<!-- 1,2,3,+ -->
+<view class="btnGroup">
+<button id='num1' bindtap="setNumber" hover-class='shadow' class="btn-item white"
+data-num="1"
+>1</button>
+<button id='num2' bindtap="setNumber" hover-class='shadow' class="btn-item white"
+data-num="2"
+>2</button>
+<button id='num3' bindtap="setNumber" hover-class='shadow' class="btn-item white"
+data-num="3"
+>3</button>
+<button id='plus' bindtap="getOperation" mark:opera='+' hover-class="shadow" class="btn-item orange {{name=='plus'?'active':''}}">+</button>
+</view>
+
+
+
+
+<!-- 0,.,= -->
+<view class="btnGroup">
+<button id='num0' bindtap="setNumber" hover-class='shadow' class="btn-item white zero"
+data-num="0"
+>0</button>
+
+
+<button id='spot' bindtap="setNumber" hover-class='shadow' class="btn-item white"
+data-num="."
+>.</button>
+<button id='equals' bindtap="calculator" mark:opera='=' hover-class="shadow" class="btn-item orange {{name=='equals'?'active':''}}">=</button>
+</view>
+
+</view>
+
+</view>
+
